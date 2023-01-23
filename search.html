@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/icon-logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <title>Search Teachers</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav-bar">
+      <div class="logo-cont">
+        <a href="index.html"><img class="nav-logo" src="assets/buscaprofe_logo.PNG" alt="logo"></a>
+      </div>
+      <div class="menu">
+        <ul class="menu-list">
+          <li>
+            <a href="search.html"><i class="fas fa-search"></i><span class="d-none">Buscar</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="far fa-user"></i><span class="d-none">Mi cuenta</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-rss"></i><span class="d-none">Blog</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-bars"></i><span class="d-none">Mas informacion</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="filter-cont">
+      <div class="filter">
+        <div class="cont">
+          <h1 class="filter-title">Filtro de busqueda por Materia, Nivel, Area, y Curriculum.</h1>
+          <form class="filter-form" action="search.html">
+            <div>
+              <label for="subject">Materia</label>
+              <input class="subject" type="text" name="subject" id="subject">
+            </div>
+            <div>
+              <label for="level">Nivel</label>
+              <div class="select-wrapper">
+                <select class="filter-select" name="level" id="level">
+                  <option value="def" selected>Todos</option>
+                  <option value="kinder">
+                    Educacion Basica
+                  </option>
+                  <option value="primary">
+                    Educacion Media
+                  </option>
+                  <option value="secondary">
+                    Educacion Universitaria
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="area">Area</label>
+              <div class="select-wrapper">
+                <select class="filter-select" name="area" id="area">
+                  <option value="def" selected>Todos</option>
+                  <option value="near">Cerca mio</option>
+                    <option value="florida">Santiago</option>
+                    <option value="california">Zona sur</option>
+                    <option value="utah">Zona Norte</option>
+                    <option value="delaware">Clases Remotas</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            </div>
+            <div class="buttons">
+              <button class="filter-btn" type="submit">Filtrar</button>
+              <button class="reset-btn" type="reset">Limpiar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="teachers-list">
+      <h3 class="found-title">Resultado encontrados: 9 profesores.</h3>
+      <div class="flex-grid">
+        <div class="col">
+          <ul class="col-list">
+            <li>
+              <a href="details.html">
+                <div class="teacher-cont">
+                  <img src="assets/teachers/teacher1.jpg" alt="teacher">
+                  <div class="t-info">
+                    <div class="per-info">
+                      <h4>Eva Charlotte</h4>
+                      <p><b>Edad:</b> 24</p>
+                    </div>
+                    <p><b>Materia:</b> Matematicas</p>
+                  </div>
+                  <p>Hola, soy Eva Charlotte me especializo en matematicas,Ingles, Ciencias y Literatura, realizo clases en todos lo niveles de la plataforma, 
+                    si estas interesado en mis clases ingresa a mi perfil y contactame para agendar las clases y su modalidad.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="details.html">
+                <div class="teacher-cont">
+                  <img src="assets/teachers/teacher2.jpg" alt="teacher">
+                  <div class="t-info">
+                    <div class="per-info">
+                      <h4>Mady Alvarez</h4>
+                      <p><b>Edad:</b> 38</p>
+                    </div>
+                    <p><b>Materia:</b> Fisica</p>
+                  </div>
+                  <p>Hola, mi nombre es Mady y estoy aqui para enseñarte todo lo que necesitas sobre fisica, realizo clases para todos los niveles, cuento con 16 años de experiencia.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="details.html">
+                <div class="teacher-cont">
+                  <img src="assets/teachers/teacher3.jpg" alt="teacher">
+                  <div class="t-info">
+                    <div class="per-info">
+                      <h4>Elda Martinez</h4>
+                      <p><b>Edad:</b> 57</p>
+                    </div>
+                    <p><b>Materia:</b> Ingles</p>
+                  </div>
+                  <p>Hola, soy Elda, soy profesora de ingles desde hace 28 años, cuento con diversos certificados en escuelas de ingles. Si necesitas aprender ingles desde lo mas basico aqui estoy para brindarte las mejores clases tanto remotas como presenciales.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="col-list">
+            <li>
+              <a href="details.html">
+                <div class="teacher-cont">
+                  <img src="assets/teachers/teacher4.jpg" alt="teacher">
+                  <div class="t-info">
+                    <div class="per-info">
+                      <h4>Tessa Mirabal</h4>
+                      <p><b>Edad:</b> 40</p>
+                    </div>
+                    <p><b>Materia:</b> Idiomas</p>
+                  </div>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque deserunt quis aliquid, aspernatur optio fuga nesciunt nam, numquam harum ex aperiam asperiores aliquam molestiae, praesentium dolore maiores dignissimos sed nihil.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="details.html">
+                <div class="teacher-cont">
+                  <img src="assets/teachers/teacher5.jpg" alt="teacher">
+                  <div class="t-info">
+                    <div class="per-info">
+                      <h4>Kent Wacker</h4>
+                      <p><b>Edad:</b> 25</p>
+                    </div>
+                    <p><b>Materia:</b> Matematicas</p>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos beatae quidem suscipit voluptates ipsa illo magni tempora mollitia harum, fugiat doloribus numquam porro asperiores exercitationem repellendus modi dicta a.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="details.html">
+                <div class="teacher-cont">
+                  <img src="assets/teachers/teacher6.jpg" alt="teacher">
+                  <div class="t-info">
+                    <div class="per-info">
+                      <h4>Joaquin Granato</h4>
+                      <p><b>Edad:</b> 24</p>
+                    </div>
+                    <p><b>Materia:</b> Quimica</p>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam qui, id dolorum tempore impedit ad facere aperiam eius consectetur dolores! Praesentium, recusandae voluptatibus corrupti ab tenetur provident doloremque minus soluta.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="col-list">
+            <li>
+              <a href="details.html">
+                <div class="teacher-cont">
+                  <img src="assets/teachers/teacher7.jpg" alt="teacher">
+                  <div class="t-info">
+                    <div class="per-info">
+                      <h4>Felisa Dalman</h4>
+                      <p><b>Edad:</b> 24</p>
+                    </div>
+                    <p><b>Materia:</b> Idiomas</p>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem incidunt, deleniti explicabo quidem magnam dolorum adipisci atque cupiditate doloremque rem repudiandae quam quod. Culpa fugiat consectetur voluptatibus corrupti architecto?.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="details.html">
+                <div class="teacher-cont">
+                  <img src="assets/teachers/teacher8.jpg" alt="teacher">
+                  <div class="t-info">
+                    <div class="per-info">
+                      <h4>He Yi Qiang</h4>
+                      <p><b>Edad:</b> 26</p>
+                    </div>
+                    <p><b>Materia:</b> Historia y ciencias sociales</p>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, rerum. Magnam, fugiat illo iusto, id maxime et delectus sapiente quo deleniti, amet doloribus ipsam dolores necessitatibus facere obcaecati quae eaque.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="details.html">
+                <div class="teacher-cont">
+                  <img src="assets/teachers/teacher9.jpg" alt="teacher">
+                  <div class="t-info">
+                    <div class="per-info">
+                      <h4> Franklin Favela </h4>
+                      <p><b>Edad:</b> 48</p>
+                    </div>
+                    <p><b>Materia:</b> Historia</p>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus vitae mollitia asperiores, deserunt ratione repudiandae autem quam tempora voluptas totam ad distinctio accusantium blanditiis quidem tempore nihil sed ullam quos?</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="top-footer">
+      <div class="footernav">
+        <ul class="footer-menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="search.html">Search</a>
+          </li>
+          <li>
+            <a href="index.html">About Us</a>
+          </li>
+          <li>
+            <a href="#">Advertise</a>
+          </li>
+        </ul>
+        <div class="footer-logo"><img src="assets/icon-icon.png" alt=""></div>
+        <ul class="social-media">
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+          <li>
+            <a href="#">Twitter</a>
+          </li>
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact-block">
+        <div class="subscribe">
+          <h3 class="sub-title">Subscribe</h3>
+          <form class="sub-form" action="#">
+            <input class="sub-email" type="email" placeholder="you@example.com">
+            <button class="sub-btn" type="submit">Send</button>
+          </form>
+        </div>
+
+        <div class="contact-us d-none">
+          <h3 class="sub-title">Contact</h3>
+          <p>Have a question or submission? <br><span>info@tdirectory.com</span></p>
+        </div>
+
+        <div class="about d-none">
+          <h3 class="sub-title">About</h3>
+          <p>Teachers Directory is an online platform to make parents have an easier way to find a teacher or tutor for
+            their kids, simply by searching for the desired subject. <a href="#">Learn more...</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bot-footer">
+      <div class="d-none">
+        <ul class="social-logos">
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2020 Teachers Directory. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
