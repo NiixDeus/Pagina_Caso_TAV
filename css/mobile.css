@@ -50,6 +50,18 @@ section {
   z-index: 1;
 }
 
+.img-bg2{
+  position: absolute;
+  background: url("https://images.unsplash.com/photo-1581726707445-75cbe4efc586?ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80") 55%;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.85;
+  z-index: 1;
+}
+
 .homepage {
   padding: 140px 30px;
   max-width: 600px;
@@ -94,6 +106,7 @@ section {
   font: bold 20px/20px "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   cursor: pointer;
+  text-align: center;
 }
 
 /* Instruction */
