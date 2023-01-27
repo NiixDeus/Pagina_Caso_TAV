@@ -80,7 +80,7 @@
                 <!--Formulario de Login y registro-->
                 <div class="contenedor__login-register">
                     <!--Login-->
-                    <form action="bienvenida.php" class="formulario__login" method="POST">
+                    <form action="php/login_usuario.php" class="formulario__login" method="POST">
                         <h2>Iniciar Sesión</h2>
                         <input type="text" placeholder="Correo Electronico" name="user_mail" required>
                         <input type="password" placeholder="Contraseña" name="user_password_hash" required>

@@ -7,12 +7,16 @@
     $user_mail = $_POST['user_mail'];
     $user_password_hash = $_POST['user_password_hash'];
 
-    $validar_login = mysqli_query ($conex, "SELECT * FROM users WHERE user_mail = '$user_mail'
-    and user_password_hash = '$user_password_hash'");
+    $validar_login = mysqli_query ($conex, "SELECT * FROM users WHERE user_mail = '$user_mail' and user_password_hash = '".md5($user_password_hash)."'");
     
     if(mysqli_num_rows($validar_login) > 0){
         $_SESSION['usuario'] = $user_mail;
-        header("location: ../bienvenida.php");
+        echo'
+            <script>
+                alert("Accediste Correctamente '.$user_mail.'.");
+                window.location = "../bienvenida.php"
+            </script>
+        ';
     }else{
         echo '
             <script>

@@ -44,7 +44,7 @@
                 <a href="bienvenida.php"><i class="fas fa-user"></i><span class="d-none">Mi Cuenta</span></a>
               </li>
               <li>
-                <a href="index.html"><i class="fas fa-bars"></i><span class="d-none">Cerrar Sesion</span></a>
+                <a href="php/logout.php"><i class="fas fa-bars"></i><span class="d-none">Cerrar Sesion</span></a>
               </li>
         </ul>
       </div>

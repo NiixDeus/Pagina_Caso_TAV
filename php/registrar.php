@@ -7,7 +7,7 @@
 		$user_name = $_POST['user_name'];
 		$user_password_hash = $_POST['user_password_hash'];
 		//Encriptamiento de password
-		$user_password_hash = hash('sha512', $user_password_hash);
+		$user_password_hash = md5($user_password_hash);
 		$fecha_reg = date("d/m/y"); 
 
 		//insersion de datos
